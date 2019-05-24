@@ -1,0 +1,3 @@
+﻿  Application.cpp
+d:\enginedev\photonengine\photonenginerepo\photon\game\src\application.cpp(7): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Game.vcxproj -> D:\EngineDev\PhotonEngine\PhotonEngineRepo\Photon\bin\Debug-x64\Game\Game.exe
