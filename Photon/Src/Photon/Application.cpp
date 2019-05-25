@@ -13,6 +13,7 @@ namespace Photon {
 
 	void Application::Run() {
 		while (true) {
+			
 		}
 	}
 }

@@ -11,8 +11,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Src\Photon.h" />
     <ClInclude Include="Src\Photon\Application.h" />
     <ClInclude Include="Src\Photon\Core.h" />
+    <ClInclude Include="Src\Photon\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Src\Photon\Application.cpp" />

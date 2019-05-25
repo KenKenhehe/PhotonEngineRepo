@@ -1,10 +1,19 @@
+#include<Photon.h>
 
-namespace Photon {
+class Game : public Photon::Application
+{
+public:
+	Game() {
+	
+	}
+	~Game() {
+
+	}
+
 
 	
-}
+};
 
-void main() {
-	
-
+Photon::Application* Photon::CreateApplication() {
+	return new Game();
 }

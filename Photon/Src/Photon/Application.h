@@ -11,5 +11,6 @@ namespace Photon {
 
 		void Run();
 	};
-
+	//To be defined in a client
+	Application* CreateApplication();
 }
