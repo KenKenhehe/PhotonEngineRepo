@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Log.h" />
     <ClInclude Include="Src\Photon.h" />
     <ClInclude Include="Src\Photon\Application.h" />
     <ClInclude Include="Src\Photon\Core.h" />
     <ClInclude Include="Src\Photon\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Log.cpp" />
     <ClCompile Include="Src\Photon\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -62,6 +64,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>PT_BUILD_DLL;PT_PLATFORM_WINDOWS;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(solutionDIr)Photon\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
