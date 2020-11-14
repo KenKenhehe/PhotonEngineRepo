@@ -18,7 +18,6 @@ Game::~Game()
 {
 }
 
-int main() {
-	Game* game = new Game();
-	game->Run();
+Photon::Application* Photon::CreateApp() {
+	return new Game();
 }
