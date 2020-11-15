@@ -9,6 +9,7 @@
 namespace Photon {
 	Application::Application()
 	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -17,17 +18,9 @@ namespace Photon {
 
 	void Application::Run()
 	{
-		WindowResizeEvent e(1270, 860);
-		PH_CORE_TRACE(e);
-
-		KeyPressEvent e2(2, 10);
-		PH_CORE_TRACE(e2);
-
-		KeyReleasedEvent e3(10);
-		PH_CORE_TRACE(e3);
-		while (true)
+		while (m_Running)
 		{
-			
+			m_Window->OnUpdate();
 		}
 	}
 }

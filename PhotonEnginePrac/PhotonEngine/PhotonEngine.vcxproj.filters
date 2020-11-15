@@ -37,6 +37,10 @@
     <ClInclude Include="src\Photon\PhPch.h">
       <Filter>Photon</Filter>
     </ClInclude>
+    <ClInclude Include="src\Photon\Window.h">
+      <Filter>Photon</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Photon\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Photon\Application.cpp">
@@ -48,5 +52,6 @@
     <ClCompile Include="src\Photon\PhPch.cpp">
       <Filter>Photon</Filter>
     </ClCompile>
+    <ClCompile Include="src\Photon\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>

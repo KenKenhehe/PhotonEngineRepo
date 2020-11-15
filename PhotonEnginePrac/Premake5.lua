@@ -9,6 +9,11 @@ workspace "PhotonEngineSln"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "PhotonEngine/vendor/GLFW/include"
+
+include "PhotonEngine/vendor/GLFW"
+
 project "PhotonEngine"
 	location "PhotonEngine"
 	
@@ -25,7 +30,13 @@ project "PhotonEngine"
 
 	includedirs{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
